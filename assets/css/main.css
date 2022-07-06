@@ -1,11 +1,75 @@
-/*
-    Issue #2
-    TODO: 1. Input field and submit button design
-    TODO: 2. exaroton data card
- */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
     background-color: #121723;
+}
+
+.feedback-input {
+    color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color:rgb(165, 169, 187);
+    border:2px solid #3b3a3a;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:35%;
+    box-sizing: border-box;
+    outline:0;
+
+}
+
+@media (max-width: 800px) {
+    .feedback-input {
+        width: 100%;
+    }
+}
+
+.feedback-input:focus { border:2px solid #3b3a3a; }
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 35%;
+    background:#264b61;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+[type="submit"]:hover { background:#062233; }
+
+@media (max-width: 800px) {
+    [type="submit"] {
+        width: 50%;
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(52, 53, 54);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(52, 53, 54);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(52, 53, 54);
 }
 
 .footer-dark {
